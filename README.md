@@ -18,7 +18,10 @@ hue: change the color of the object
 diagonal-down: moves the object diagonally
 outside-size: changes the size of the other half of the outside circles
 
+## Gifs
+![](https://github.com/catherg/Portfolio/blob/Parametric-Generators-Project/CatherineGuo_a5_g0-1.gif)
+
 ## Resources
 p5.js reference page (to see function arguments)
 https://p5js.org/
-Kate Compton
+Kate Compton - sample code
