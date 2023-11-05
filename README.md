@@ -20,7 +20,7 @@ outside-size: changes the size of the other half of the outside circles
 
 ## Gifs
 ![](https://github.com/catherg/Portfolio/blob/Parametric-Generators-Project/CatherineGuo_a5_g0-1.gif)
-
+![](https://github.com/catherg/Portfolio/blob/Parametric-Generators-Project/CatherineGuo_a5_g1-1.gif)
 ## Resources
 p5.js reference page (to see function arguments)
 https://p5js.org/
