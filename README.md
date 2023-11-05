@@ -1,5 +1,24 @@
-# Portfolio
+## Generator 1
+generator 1: ellipse_layers. This generates horizontal and vertical ellipses on a flower background
+## Generator 2
+Generator 2: flower creator. This generates many circles which are in a flower formation.
 
-Hi, welcome to my portfolio! My name is Catherine and I'm currently a junior at Northwestern studying Computer Science. This portfolio contains 3 of the projects I thought were the most fun to create.
+## Sliders
+horizontal-ellipse: changes how much is displayed of the horizontal ellipse
+inner-vertical-ellipse: creates/modifies size of horizontal ellipse
+move-ellipse: rotates vertical ellipse
+color: changes color of vertical ellipse
+brightness: changes brightness of the chosen color
 
-In this Portfolio there are 3 main branches, an Artifical Life branch, a Particle Swarms branch, and a Parametric Generators branch.
+## Slider Controls
+size: changes the size of middle circle and half of the outside circles
+diagonal-up: Move the object up diagonally
+angle: rotate the object
+hue: change the color of the object
+diagonal-down: moves the object diagonally
+outside-size: changes the size of the other half of the outside circles
+
+## Resources
+p5.js reference page (to see function arguments)
+https://p5js.org/
+Kate Compton
