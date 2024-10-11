@@ -1,7 +1,9 @@
 
 ##### This program was created using r/ludobots and pyrosim.
 
-#### Running the program:
+## Explanation Video:https://youtu.be/rAyzGG67TB0
+
+#### Run and try the program yourself:
 
 1. Navigate to GitHub Desktop or download a zip of the files in the branch final1
 
@@ -146,4 +148,3 @@ It ultimately seems that after running my experiment my initial thoughts and hyp
 
 I would further explore the symmetry in these robots if I had more time, and I would analyze if the experiment 3 robot always produces the best fitness values. Another thing I would do if I had more time is to not make time a constant in these experiments, but rather run all of these experiments for 500+ generations, and vary population size to see if there is any difference in the behavior.
 
-## Explanation Video:https://youtu.be/rAyzGG67TB0
