@@ -10,9 +10,12 @@ If you would like to experiment with the Particle Swarms and Parametric Generato
 
 
 In this Portfolio there are 6 branches for these three projects:
-- 3 branches for the Artifical Life project: overview of the creation process for this project, the data I used to train the robots, and the code and process for the evolution of these robots
-- 1 branch containing the code and description for my Particle Swarms project
-- 1 branch for my Parametric Generators project.
+## Artificial Life Project:
+  3 branches - overview of the creation process for this project, the data I used to train the robots, and the code and process for the evolution of these robots
+## Particle Swarms project:
+  1 branch containing the code and description, plus gifs of the me interacting with the project to watch
+## Parametric Generators project
+  1 branch containing the code and description, plus gifs of the me interacting with the project to watch
 
 In the README of each branch there is a description of the project and how it works, enjoy!
 
