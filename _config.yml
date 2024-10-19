@@ -1,0 +1,7 @@
+theme: jekyll-theme-midnight
+title: Catherine Portfolio
+description: >- 
+  This is my portfolio site where I showcase my projects.
+baseurl: "/Portfolio"
+url: "https://catherg.github.io"
+
