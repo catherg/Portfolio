@@ -1,0 +1,64 @@
+/* styles.css */
+.content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.section {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.button-container {
+    text-align: center; /* Centers only the button */
+    margin-bottom: 20px; /* Adds some space below the button */
+}
+.image-container {
+    text-align: center; /* Centers only the button */
+    margin-bottom: 20px; /* Adds some space below the button */
+}
+.toggle {
+    font-size: 18px; /* Makes the button text larger */
+    padding: 15px 30px; /* Adds padding to make the button itself larger */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Removes the default button border */
+    border-radius: 5px; /* Adds rounded corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.toggle:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+.diagram-descriptions{
+    text-align: center; /* Centers only the button */
+}
+.video-container {
+    display: flex;
+    gap: 20px; /* Space between video items */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-item {
+    text-align: center; /* Center-aligns the title and video */
+    color: white;       /* Makes title text white */
+}
+
+.video-item h3 {
+    margin: 10px 0;     /* Adds some space above and below each title */
+    font-size: 18px;    /* Increases title font size */
+}
+
+.video-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.video-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}

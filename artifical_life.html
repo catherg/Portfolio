@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artifical Life: Replicating the Process of Evolution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="artifical_life.css">
+</head>
+<body>
+    <header>
+        <h1>Artifical Life: Replicating the Process of Evolution</h1>
+    </header>
+    <!-- <div class="intro">
+        Hi, I'm Catherine Guo, a senior at Northwestern studying Computer Science. This portfolio showcases my favorite projects, emphasizing my proficiency in various programming languages and my passion for visually appealing, interactive applications.
+    </div> -->
+
+    <div class="video-container">
+        <div class="video-item">
+            <h3>Experiment 1</h3>
+            <video id="video1" width="320" height="180" muted controls>
+                <source src="Experiment1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h3>Experiment 2</h3>
+            <video id="video2" width="320" height="180" muted controls>
+                <source src="Experiment2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-item">
+            <h3>Experiment 3</h3>
+            <video id="video3" width="320" height="180" muted controls>
+                <source src="Experiment3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="video-controls">
+        <button onclick="playVideos()">Play All</button>
+        <button onclick="pauseVideos()">Pause All</button>
+    </div>
+    
+
+    <section>
+        <h2 class="project_titles">Running the program:</h2>
+        <ol>
+            <li>Navigate to GitHub Desktop or download a zip of the files in the branch final1</li>
+            <li>Open the zipped file or navigate to the folder directed (catherg/mybots) on your terminal</li>
+            <li>Confirm you are in a branch called "final1" on your terminal</li>
+            <li>Run the program with the command: "python3 search.py"</li>
+        </ol>
+        <h3>
+            Notes about analyzing the simulation:
+        </h3>
+        <p>The best performing body and brain is saved in this repository as experiment1_body(givenID).urdf, experiment1_brain(givenID).nndf, etc.</p>
+        <p>If needed, run the best performing body in each experiment using these files (delete the "experiment1_" tag in the name before you run it) - These files can be run in solution and parallelhillclimber, specifically in line 16 of of parallelHillClimber.py, change the self.nextAvailableID to the ID number given in these files and change self.parents[i] to self.parents[0]. - Then in line 67 of of parallelHillClimber.py put self.parents[0] instead of self.parents[highest]</p>
+        <p>Note about running the program: If there are issues with the fitness value being read, run it again and it should be read fine (this error occurs sometimes when running a large number of generations)</p>
+    </section>
+    <div class="section">
+        <div class="button-container">
+            <button class="toggle" onclick="toggleSection('content1')">Click Here to learn more about the Experimentation</button>
+        </div>
+        <div class="content" id="content1">
+            <section>
+                <h2 class="project_titles">Experimentation</h2>
+                <br>
+                <p>The task of the creature is to march to the beat, meaning that they will be walking with small wiggles and jumps in between steps. As the generations continue, the creature will randomly mutate by adding random cube to any axis, and the brain then adding a sensor neuron.
+                </p><br>
+                <p>
+                    I will be conducting three experiments and determining under which experiment the creature performs the best in. The first experiment contains a population size of 10 and a total of 300 generations, in the first experiment the creature cannot spawn more than 15 cubes. The second experiment contains a population size of 10 and a total of 150 generations, and in this experiment the creature cannot spawn more than 20 cubes. The last experiment contains a population size of 10 over 100 generations, and in this experiment the creature can spawn as many cubes as it is able to.
+                </p><br>
+                <p>
+                    After calculating the time it takes to produce one simulation(~30 seconds), it wasn't plausible for me to produce 50,000 simulations, so instead of doing a total of 500 generations over 10 seeds I made the constant of each experiment time. After experimenting with the time needed to run each simulation for the different experiments, I chose to have each experiment take 8 hours to run. Another constant in these experiments is the population size, which always stays at 10. Since I will only be doing three experiments I used 3 seeds, one for each experiment.
+                </p><br>
+                <p>
+                    I tested these experiments by making the body mutate (look at "Body and Brain Mutation" Section, line 75) randomly every generation. The control experiment in this case was experiment 1, which restricted the robot to have 15 joints. I did this by inserting this piece of code:
+                </p>
+                <div class="image-container">
+                    <img src="joints.png" alt="code describing joint limit" width="250px">
+                </div>
+                <p>
+                    These two lines made it so that if the robot was at the largest size possible, it would completely skip over the mutation of the body and not change anything. I made this into my control experiment because I isolated the variable of interest which was the number of cubes.
+                </p><br>
+                <p>
+                    The inspiration for this experiment came from a question I had about how robots of different sizes could complete certain tasks, and what the optimal size and mutation for the body would be to complete a simple task like walking or "marching to the beat".
+                </p>
+                <br>
+                <h3>Experiment Diagram:</h3>
+                <div class="image-container">
+                    <img src="experiment_diagram.jpg" alt="experiment diagram" width="500px">
+                </div>
+                <div class="diagram-descriptions">
+                    <p>Credit for the diagram goes to Karl Sims</p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <div class="section">
+        <div class="button-container">
+            <button class="toggle" onclick="toggleSection('content2')">Click to toggle</button>
+        </div>
+        <div class="content" id="content2">
+            <p>This is the content of the section 2.</p>
+        </div>
+    </div>
+    
+    <script src="artificial_life.js"></script>
+</body>
+</html>
