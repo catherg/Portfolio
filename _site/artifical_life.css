@@ -48,6 +48,9 @@
 .video-item h3 {
     margin: 10px 0;     /* Adds some space above and below each title */
     font-size: 18px;    /* Increases title font size */
+    font-size: 25px; 
+    font-weight: 400;
+    font-family: "Gill Sans", sans-serif;
 }
 
 .video-controls {

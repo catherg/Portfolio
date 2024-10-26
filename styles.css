@@ -29,10 +29,10 @@ header {
     color: #ffffff;
     text-align: center;
     margin-top: 0.5em;
-    font-size: 1.5em; /* Larger font for the main title */
+    font-size: 1.5em;
     font-family: "Gill Sans", sans-serif;
     font-weight: lighter;
-    padding: 0px 50px; /* Reduced padding */
+    padding: 0px 50px; 
 }
 
 header h1 {
