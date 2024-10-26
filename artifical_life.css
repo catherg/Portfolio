@@ -76,3 +76,57 @@ ol {
 .toggle.active i {
     transform: rotate(180deg);
 }
+
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    left: 20px;
+    top: 10%; /* Adjust this to control vertical placement */
+    height: 80vh; /* Taller sidebar - can be set to 100% for full height */
+    width: 150px; /* Narrower width */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow-y: auto; /* Allows scrolling if the content exceeds the height */
+}
+
+/* Button styling */
+.sidebar button {
+    flex: 1; /* Ensures button takes up available width */
+    padding: 10px 0; /* Adjust vertical padding as needed */
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-align: center; /* Centers text horizontally */
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #666;
+}
+
+/* Adjust the triangle icon */
+.sidebar button i {
+    margin-left: 10px;
+    transition: transform 0.3s;
+}
+
+.sidebar button.active i {
+    transform: rotate(180deg);
+}
+
+/* Style for the main content box */
+.main-content {
+    margin-left: 250px; /* Adjust based on sidebar width */
+    padding: 20px;
+    background-color: rgba(211, 211, 211, 0.5);
+    border-radius: 10px;
+    color: #fff;
+    max-width: 70%;
+}
