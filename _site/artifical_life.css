@@ -1,4 +1,3 @@
-/* styles.css */
 .content {
     display: none;
     overflow: hidden;
@@ -10,44 +9,44 @@
     margin-top: 20px;
 }
 .button-container {
-    text-align: center; /* Centers only the button */
+    text-align: center; 
 }
 .image-container {
-    text-align: center; /* Centers only the button */
+    text-align: center; 
 }
 .toggle {
-    font-size: 20px; /* Makes the button text larger */
+    font-size: 20px;
     font-family: "Gill Sans", sans-serif;
     padding: 15px 30px;
     background-color: #555555; 
-    color: white; /* Text color */
-    border: none; /* Removes the default button border */
-    border-radius: 5px; /* Adds rounded corners */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
 .toggle:hover {
-    background-color: #45a049; /* Darker shade on hover */
+    background-color: #45a049; 
 }
 .diagram-descriptions{
-    text-align: center; /* Centers only the button */
+    text-align: center;
 }
 .video-container {
     display: flex;
-    gap: 20px; /* Space between video items */
+    gap: 20px; 
     justify-content: center;
     margin-top: 20px;
 }
 
 .video-item {
-    text-align: center; /* Center-aligns the title and video */
-    color: white;       /* Makes title text white */
+    text-align: center; 
+    color: white;  
 }
 
 .video-item h3 {
-    margin: 10px 0;     /* Adds some space above and below each title */
-    font-size: 18px;    /* Increases title font size */
+    margin: 10px 0;     
+    font-size: 18px; 
     font-size: 25px; 
     font-weight: 400;
     font-family: "Gill Sans", sans-serif;
@@ -71,40 +70,37 @@ ol {
     font-weight: 630; 
 }
 .toggle i {
-    margin-left: 8px; /* Space between text and icon */
-    transition: transform 0.3s; /* Smooth rotation */
+    margin-left: 8px; 
+    transition: transform 0.3s; 
 }
 
-/* Rotate icon when active */
 .toggle.active i {
     transform: rotate(180deg);
 }
 
-/* Sidebar container */
 .sidebar {
     position: fixed;
     left: 20px;
-    top: 10%; /* Adjust this to control vertical placement */
-    height: 80vh; /* Taller sidebar - can be set to 100% for full height */
-    width: 150px; /* Narrower width */
+    top: 10%; 
+    height: 80vh;
+    width: 150px; 
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    overflow-y: auto; /* Allows scrolling if the content exceeds the height */
+    overflow-y: auto; 
 }
 
-/* Button styling */
 .sidebar button {
-    flex: 1; /* Ensures button takes up available width */
-    padding: 10px 0; /* Adjust vertical padding as needed */
+    flex: 1; 
+    padding: 10px 0;
     background-color: #444;
     color: white;
     border: none;
     border-radius: 8px;
-    text-align: center; /* Centers text horizontally */
+    text-align: center;
     cursor: pointer;
     font-size: 0.9em;
     transition: background-color 0.3s;
@@ -114,7 +110,6 @@ ol {
     background-color: #666;
 }
 
-/* Adjust the triangle icon */
 .sidebar button i {
     margin-left: 10px;
     transition: transform 0.3s;
@@ -124,9 +119,8 @@ ol {
     transform: rotate(180deg);
 }
 
-/* Style for the main content box */
 .main-content {
-    margin-left: 250px; /* Adjust based on sidebar width */
+    margin-left: 250px;
     padding: 20px;
     background-color: rgba(211, 211, 211, 0.5);
     border-radius: 10px;
