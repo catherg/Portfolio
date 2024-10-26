@@ -6,14 +6,13 @@
     <title>Artifical Life: Replicating the Process of Evolution</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="artifical_life.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
         <h1>Artifical Life: Replicating the Process of Evolution</h1>
     </header>
-    <!-- <div class="intro">
-        Hi, I'm Catherine Guo, a senior at Northwestern studying Computer Science. This portfolio showcases my favorite projects, emphasizing my proficiency in various programming languages and my passion for visually appealing, interactive applications.
-    </div> -->
 
     <div class="video-container">
         <div class="video-item">
@@ -80,7 +79,9 @@
     </section>
 
     <div class="button-container">
-        <button class="toggle" onclick="toggleSection('content1')">Click here to learn more about the experimentation</button>
+        <button class="toggle" onclick="toggleSection('content1')">
+            Experimentation<i class="fas fa-caret-down"></i>
+        </button>
     </div>
     <div class="content" id="content1">
         <section>
@@ -118,7 +119,9 @@
     </div>
 
     <div class="button-container">
-        <button class="toggle" onclick="toggleSection('content2')">Click here to learn about the added functions and sensors</button>
+        <button class="toggle" onclick="toggleSection('content2')">
+            Functions and Sensors<i class="fas fa-caret-down"></i>
+        </button>
     </div>
         <div class="content" id="content2">
             <section>
@@ -135,7 +138,9 @@
         </div>
 
     <div class="button-container">
-        <button class="toggle" onclick="toggleSection('content3')">Click here to learn about the creation of the body and brain</button>
+        <button class="toggle" onclick="toggleSection('content3')">
+            Creation of the Body and Brain<i class="fas fa-caret-down"></i>
+        </button>
     </div>
     <div class="content" id="content3">
         <section>
@@ -173,7 +178,9 @@
         </section>
     </div>
     <div class="button-container">
-        <button class="toggle" onclick="toggleSection('content4')">Click here to learn about the morphospace</button>
+        <button class="toggle" onclick="toggleSection('content4')">
+            Morphospace<i class="fas fa-caret-down"></i>
+        </button>
     </div>
     <div class="content" id="content4">
         <section>
@@ -188,7 +195,9 @@
         </section>
     </div>
     <div class="button-container">
-        <button class="toggle" onclick="toggleSection('content5')">Click here to learn about the process of selection:</button>
+        <button class="toggle" onclick="toggleSection('content5')">
+            Process of Selection<i class="fas fa-caret-down"></i>
+        </button>
     </div>
     <div class="content" id="content5">
         <section>
@@ -210,37 +219,11 @@
         </section>
     </div>
 
-    <div class="button-container">
-        <button class="toggle" onclick="toggleSection('content6')">Click here to learn about the final results:</button>
-    </div>
-    <div class="content" id="content6">
-        <section>
-            <h2 class="project_titles">Final Results:</h2>
-            <br>
-            <p>
-                From analyzing the behavior of the robots produced from these 3 experiments, it seems that my initial hypothesis was correct. The most restricted robot, where there could have only been 15 joints, performed the best while the least restricted robot performed the worst. The least restricted robot barely moved after 100 generations, while the most restricted robot wiggled a substantial amount and moved away from its original starting point.
-            </p><br>
-            <p>
-                As expected, the bodies and brains changed the most in experiment 3. This is because the bodies and brains were restricted in experiments 1 and 2 to the point where they could only expand by so much. Although the bodies and brains in experiment 3 were the largest, the behavior of the robot turned out to be the least effective. All the lineages in this robot are pretty similar, with small changes in the robot happening every few generations, the experiment 1 and experiment 2 lineages stopped early on since there were restriction.
-            </p><br>
-            <p>
-                Evolution in these robots did get stuck every few generations mainly because the body only mutates randomly, and also because once a high fitness value is reached, it is very hard to overpass it. The evolution mainly got stuck toward the end of experiments 1 and 2 because the robot wasn't able to get any bigger. I don't think there was anything that lowered the likelihood of beneficial mutations except for the restrictions I put on the robot for experiments 1 and 2.
-            </p>
-            <h4>Digging Deeper:</h4>
-            <p>
-                After digging further into the results, it seems that the most restricted robot (experiment 1), actually has the most symmetry among the three experiments. The experiment 1 robot seemed to produce 2 arms, which helped with its task of marching to the beat, while the robots from experiment 2 and 3 stayed as lumps of cubes.
-            </p><br>
-            <p>
-                From analyzing the fitness curves, it seems that the least restricted robot actually performed the best. The final fitness value of the least restricted robot (experiment 3) was around 25, while experiment 2 was around 16, and experiment 1 was around 21.
-            </p><br>
-            <p>
-                Although I believe these results are telling, I think it is important to note that since my constant was time, I ran the most restricted robot for many more generations than my other robots. This could have been a contributing factor as to why the most restricted robot performed the best.
-            </p>
-        </section>
-    </div>
 
     <div class="button-container">
-        <button class="toggle" onclick="toggleSection('content7')">View the Fitness Curves:</button>
+        <button class="toggle" onclick="toggleSection('content7')">
+            Fitness Curves<i class="fas fa-caret-down"></i>
+        </button>
     </div>
     <div class="content" id="content7">
         <section>
@@ -267,6 +250,37 @@
             <div class="image-container">
                 <img src="experiment3_curve.png" alt="selection diagram" width="500px">
             </div>
+        </section>
+    </div>
+
+    <div class="button-container">
+        <button class="toggle" onclick="toggleSection('content6')">
+            Final results<i class="fas fa-caret-down"></i>
+        </button>
+    </div>
+    <div class="content" id="content6">
+        <section>
+            <h2 class="project_titles">Final Results:</h2>
+            <br>
+            <p>
+                From analyzing the behavior of the robots produced from these 3 experiments, it seems that my initial hypothesis was correct. The most restricted robot, where there could have only been 15 joints, performed the best while the least restricted robot performed the worst. The least restricted robot barely moved after 100 generations, while the most restricted robot wiggled a substantial amount and moved away from its original starting point.
+            </p><br>
+            <p>
+                As expected, the bodies and brains changed the most in experiment 3. This is because the bodies and brains were restricted in experiments 1 and 2 to the point where they could only expand by so much. Although the bodies and brains in experiment 3 were the largest, the behavior of the robot turned out to be the least effective. All the lineages in this robot are pretty similar, with small changes in the robot happening every few generations, the experiment 1 and experiment 2 lineages stopped early on since there were restriction.
+            </p><br>
+            <p>
+                Evolution in these robots did get stuck every few generations mainly because the body only mutates randomly, and also because once a high fitness value is reached, it is very hard to overpass it. The evolution mainly got stuck toward the end of experiments 1 and 2 because the robot wasn't able to get any bigger. I don't think there was anything that lowered the likelihood of beneficial mutations except for the restrictions I put on the robot for experiments 1 and 2.
+            </p>
+            <h4>Digging Deeper:</h4>
+            <p>
+                After digging further into the results, it seems that the most restricted robot (experiment 1), actually has the most symmetry among the three experiments. The experiment 1 robot seemed to produce 2 arms, which helped with its task of marching to the beat, while the robots from experiment 2 and 3 stayed as lumps of cubes.
+            </p><br>
+            <p>
+                From analyzing the fitness curves, it seems that the least restricted robot actually performed the best. The final fitness value of the least restricted robot (experiment 3) was around 25, while experiment 2 was around 16, and experiment 1 was around 21.
+            </p><br>
+            <p>
+                Although I believe these results are telling, I think it is important to note that since my constant was time, I ran the most restricted robot for many more generations than my other robots. This could have been a contributing factor as to why the most restricted robot performed the best.
+            </p>
         </section>
     </div>
 

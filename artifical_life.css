@@ -67,3 +67,12 @@ ol {
 .heading-style {
     font-weight: 630; 
 }
+.toggle i {
+    margin-left: 8px; /* Space between text and icon */
+    transition: transform 0.3s; /* Smooth rotation */
+}
+
+/* Rotate icon when active */
+.toggle.active i {
+    transform: rotate(180deg);
+}
