@@ -1,4 +1,3 @@
-// script.js
 function toggleSection(elementId) {
     var content = document.getElementById(elementId);
     if (content.style.display === "block") {
