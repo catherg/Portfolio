@@ -1,5 +1,5 @@
 .content {
-    display: none;
+    display: block;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
@@ -128,4 +128,7 @@ ol {
     border-radius: 10px;
     color: #fff;
     max-width: 70%;
+}
+html {
+    scroll-behavior: smooth;
 }

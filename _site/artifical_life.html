@@ -6,8 +6,6 @@
     <title>Artifical Life: Replicating the Process of Evolution</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="artifical_life.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
     <header>
@@ -41,52 +39,65 @@
         <button onclick="playVideos()">Play All</button>
         <button onclick="pauseVideos()">Pause All</button>
     </div>
+
+    <div class="sidebar">
+        <button class="toggle" onclick="location.href='#content-1'">Running the Program</button>
+        <button class="toggle" onclick="location.href='#content-2'">Hypothesis </button>
+        <button class="toggle" onclick="location.href='#content-0'">Conclusion </button>
+        <button class="toggle" onclick="location.href='#content1'">Experimentation </button>
+        <button class="toggle" onclick="location.href='#content2'">Functions and Sensors</button>
+        <button class="toggle" onclick="location.href='#content3'">Creation of the Body and Brain</button>
+        <button class="toggle" onclick="location.href='#content4'">Morphospace</button>
+        <button class="toggle" onclick="location.href='#content5'">Process of Selection </button>
+        <button class="toggle" onclick="location.href='#content6'">Fitness Curves</button>
+        <button class="toggle" onclick="location.href='#content7'">Final Results </button>
+    </div>
     
 
-    <section>
-        <div class="button-container">
-            <a href="https://github.com/catherg/Portfolio/tree/Artificial-Life-Project" class="button">View the code</a>
-        </div>
-
-        <h2 class="project_titles">Running the program:</h2>
-        <ol>
-            <li>Navigate to GitHub Desktop or download a zip of the files in the branch final1</li>
-            <li>Open the zipped file or navigate to the folder directed (catherg/mybots) on your terminal</li>
-            <li>Confirm you are in a branch called "final1" on your terminal</li>
-            <li>Run the program with the command: "python3 search.py"</li>
-        </ol>
-        <h3 class="heading-style">
-            Notes about analyzing the simulation:
-        </h3>
-        <p>The best performing body and brain is saved in this repository as experiment1_body(givenID).urdf, experiment1_brain(givenID).nndf, etc.</p>
-        <br><p>If needed, run the best performing body in each experiment using these files (delete the "experiment1_" tag in the name before you run it) - These files can be run in solution and parallelhillclimber, specifically in line 16 of of parallelHillClimber.py, change the self.nextAvailableID to the ID number given in these files and change self.parents[i] to self.parents[0]. - Then in line 67 of of parallelHillClimber.py put self.parents[0] instead of self.parents[highest]</p>
-        <br><p>Note about running the program: If there are issues with the fitness value being read, run it again and it should be read fine (this error occurs sometimes when running a large number of generations)</p>
-    </section>
-    <section>
-        <h2 class="project_titles">Hypothesis</h2>
-        <br><p>
-            I believe that the first experiment with a restriction on 15 cubes will perform the task the best. This is because I believe 15 cubes is enough for the sensors and the brain to have optimal control when doing the task. Once the creature gets larger and gains more cubes it would become too heavy and chaotic to march to the beat very well.
-        </p>
-    </section>
-    <section>
-        <h2 class="project_titles">Conclusion:</h2>
-        <p>
-            It ultimately seems that after running my experiment my initial thoughts and hypotheses were proven right, the size of a creature impacts its movement a lot, usually making it worse. Although I didn't anticipate the experiment 3 robot to have the best fitness values, especially only after 100 generations. I also didn't anticipate the experiment 1 robot to grow arms and have the most symmetry among all of the robots.
-        </p><br>
-        <p>
-            I would further explore the symmetry in these robots if I had more time, and I would analyze if the experiment 3 robot always produces the best fitness values. Another thing I would do if I had more time is to not make time a constant in these experiments, but rather run all of these experiments for 500+ generations, and vary population size to see if there is any difference in the behavior.
-        </p>
-    </section>
-    <div class="sidebar">
-        <button class="toggle" onclick="toggleSection('content1')">Experimentation <i class="fas fa-caret-down"></i></button>
-        <button class="toggle" onclick="toggleSection('content2')">Functions and Sensors <i class="fas fa-caret-down"></i></button>
-        <button class="toggle" onclick="toggleSection('content3')">Creation of the Body and Brain <i class="fas fa-caret-down"></i></button>
-        <button class="toggle" onclick="toggleSection('content4')">Morphospace <i class="fas fa-caret-down"></i></button>
-        <button class="toggle" onclick="toggleSection('content5')">Process of Selection <i class="fas fa-caret-down"></i></button>
-        <button class="toggle" onclick="toggleSection('content6')">Fitness Curves <i class="fas fa-caret-down"></i></button>
-        <button class="toggle" onclick="toggleSection('content7')">Final Results <i class="fas fa-caret-down"></i></button>
+    <div class="content" id="content-1">
+        <section>
+            <div class="button-container">
+                <a href="https://github.com/catherg/Portfolio/tree/Artificial-Life-Project" class="button">View the code</a>
+            </div>
+    
+            <div class="button-container">
+                <a href="https://youtu.be/rAyzGG67TB0" class="button">Watch the Explanation Video</a>
+            </div>
+    
+            <h2 class="project_titles">Running the program:</h2>
+            <ol>
+                <li>Navigate to GitHub Desktop or download a zip of the files in the branch final1</li>
+                <li>Open the zipped file or navigate to the folder directed (catherg/mybots) on your terminal</li>
+                <li>Confirm you are in a branch called "final1" on your terminal</li>
+                <li>Run the program with the command: "python3 search.py"</li>
+            </ol>
+            <h3 class="heading-style">
+                Notes about analyzing the simulation:
+            </h3>
+            <p>The best performing body and brain is saved in this repository as experiment1_body(givenID).urdf, experiment1_brain(givenID).nndf, etc.</p>
+            <br><p>If needed, run the best performing body in each experiment using these files (delete the "experiment1_" tag in the name before you run it) - These files can be run in solution and parallelhillclimber, specifically in line 16 of of parallelHillClimber.py, change the self.nextAvailableID to the ID number given in these files and change self.parents[i] to self.parents[0]. - Then in line 67 of of parallelHillClimber.py put self.parents[0] instead of self.parents[highest]</p>
+            <br><p>Note about running the program: If there are issues with the fitness value being read, run it again and it should be read fine (this error occurs sometimes when running a large number of generations)</p>
+        </section>
     </div>
-
+    <div class="content" id="content-2">
+        <section>
+            <h2 class="project_titles">Hypothesis</h2>
+            <br><p>
+                I believe that the first experiment with a restriction on 15 cubes will perform the task the best. This is because I believe 15 cubes is enough for the sensors and the brain to have optimal control when doing the task. Once the creature gets larger and gains more cubes it would become too heavy and chaotic to march to the beat very well.
+            </p>
+        </section>
+    </div>
+    <div class="content" id="content-0">
+        <section>
+            <h2 class="project_titles">Conclusion:</h2>
+            <p>
+                It ultimately seems that after running my experiment my initial thoughts and hypotheses were proven right, the size of a creature impacts its movement a lot, usually making it worse. Although I didn't anticipate the experiment 3 robot to have the best fitness values, especially only after 100 generations. I also didn't anticipate the experiment 1 robot to grow arms and have the most symmetry among all of the robots.
+            </p><br>
+            <p>
+                I would further explore the symmetry in these robots if I had more time, and I would analyze if the experiment 3 robot always produces the best fitness values. Another thing I would do if I had more time is to not make time a constant in these experiments, but rather run all of these experiments for 500+ generations, and vary population size to see if there is any difference in the behavior.
+            </p>
+        </section>
+    </div>
     <div class="content" id="content1">
         <section>
             <h2 class="project_titles">Experimentation</h2>
@@ -202,7 +213,7 @@
         </section>
     </div>
 
-    <div class="content" id="content7">
+    <div class="content" id="content6">
         <section>
             <h2 class="project_titles">Fitness Curves:</h2>
             <br>
@@ -229,7 +240,7 @@
             </div>
         </section>
     </div>
-    <div class="content" id="content6">
+    <div class="content" id="content7">
         <section>
             <h2 class="project_titles">Final Results:</h2>
             <br>
