@@ -132,3 +132,7 @@ ol {
 html {
     scroll-behavior: smooth;
 }
+body {
+    background:fixed;
+    background-color: black;
+}
