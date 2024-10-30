@@ -13,7 +13,7 @@ p {
 }
 
 body {
-    background-image: url('https://media.giphy.com/media/CkBzt6qXCCXw4/giphy.gif');
+    background-image: url('https://media.giphy.com/media/3o7btOfPKQb7mCLxBu/giphy.gif');
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -120,4 +120,7 @@ header, .intro, section, footer {
 }
 section {
     background-color: rgba(211, 211, 211, 0.5);
+}
+.project_interaction {
+    text-align: center;
 }
