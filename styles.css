@@ -13,7 +13,8 @@ p {
 }
 
 body {
-    background-image: url('https://media.giphy.com/media/3o7btOfPKQb7mCLxBu/giphy.gif');
+    /* background-image: url('https://www.behance.net/gallery/19298307/Triternum-Infinite-gif/modules/130425079'); */
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
